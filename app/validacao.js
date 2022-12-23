@@ -14,7 +14,8 @@ function verificaSeChutePossuiValorValido(chute){
         document.body.innerHTML = 
         `<h1>Você acerto!</h1>
          <h3>O numero secreto era ${numeroSecreto}
-         <h2>&#9996;&#128513</h2> 
+         <h2>&#9996;&#128513</h2>
+         <button id="jogar-novamente" class="btn">Jogar Novamente</button 
         `
     }
 
@@ -38,3 +39,11 @@ function chuteForInvalido(numero) {
 function numeroForMaiorOuMenorQueValorPermitido(numero){
     return numero > maiorValor || numero < menorValor
 }
+
+document.body.addEventListener('click', (e) =>{
+    if(e.target.id == 'jogar-novamente'){
+        window.location.reload()
+    }
+})
+
+
