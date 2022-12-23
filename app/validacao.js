@@ -12,7 +12,7 @@ function verificaSeChutePossuiValorValido(chute){
     
     if(numero === numeroSecreto){
         document.body.innerHTML = 
-        `<h1>Você acerto!</h1>
+        `<h1>Você acertou!</h1>
          <h3>O numero secreto era ${numeroSecreto}
          <h2>&#9996;&#128513</h2>
          <button id="jogar-novamente" class="btn">Jogar Novamente</button 
